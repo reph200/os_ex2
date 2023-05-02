@@ -1,6 +1,12 @@
 cmake_minimum_required(VERSION 3.16)
-project(untitled)
+project(OS_ex2)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD  11)
 
-add_executable(untitled main2.cpp resources/uthreads.h resources/uthreads.cpp)
+include_directories(.)
+
+add_executable(
+        uthreads.h
+        uthreads.cpp
+        tests/test6_no_out.cpp
+        )

@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/t8832181/CLionProjects/os_ex2_l
+CMAKE_SOURCE_DIR = /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/t8832181/CLionProjects/os_ex2_l/cmake-build-debug
+CMAKE_BINARY_DIR = /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/t8832181/CLionProjects/os_ex2_l/cmake-build-debug/CMakeFiles /mnt/c/Users/t8832181/CLionProjects/os_ex2_l/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/t8832181/CLionProjects/os_ex2_l/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/t9092556/CLionProjects/OS_ex2/ex_2_tests_updated/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,71 +111,98 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named untitled
+# Target rules for targets named uthreads.h
 
 # Build rule for target.
-untitled: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 untitled
-.PHONY : untitled
+uthreads.h: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 uthreads.h
+.PHONY : uthreads.h
 
 # fast build rule for target.
-untitled/fast:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/build
-.PHONY : untitled/fast
+uthreads.h/fast:
+	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/build
+.PHONY : uthreads.h/fast
 
-main2.o: main2.cpp.o
+tests/test6_no_out.o: tests/test6_no_out.cpp.o
 
-.PHONY : main2.o
-
-# target to build an object file
-main2.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/main2.cpp.o
-.PHONY : main2.cpp.o
-
-main2.i: main2.cpp.i
-
-.PHONY : main2.i
-
-# target to preprocess a source file
-main2.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/main2.cpp.i
-.PHONY : main2.cpp.i
-
-main2.s: main2.cpp.s
-
-.PHONY : main2.s
-
-# target to generate assembly for a file
-main2.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/main2.cpp.s
-.PHONY : main2.cpp.s
-
-resources/uthreads.o: resources/uthreads.cpp.o
-
-.PHONY : resources/uthreads.o
+.PHONY : tests/test6_no_out.o
 
 # target to build an object file
-resources/uthreads.cpp.o:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/resources/uthreads.cpp.o
-.PHONY : resources/uthreads.cpp.o
+tests/test6_no_out.cpp.o:
+	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.o
+.PHONY : tests/test6_no_out.cpp.o
 
-resources/uthreads.i: resources/uthreads.cpp.i
+tests/test6_no_out.i: tests/test6_no_out.cpp.i
 
-.PHONY : resources/uthreads.i
+.PHONY : tests/test6_no_out.i
 
 # target to preprocess a source file
-resources/uthreads.cpp.i:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/resources/uthreads.cpp.i
-.PHONY : resources/uthreads.cpp.i
+tests/test6_no_out.cpp.i:
+	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.i
+.PHONY : tests/test6_no_out.cpp.i
 
-resources/uthreads.s: resources/uthreads.cpp.s
+tests/test6_no_out.s: tests/test6_no_out.cpp.s
 
-.PHONY : resources/uthreads.s
+.PHONY : tests/test6_no_out.s
 
 # target to generate assembly for a file
-resources/uthreads.cpp.s:
-	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/resources/uthreads.cpp.s
-.PHONY : resources/uthreads.cpp.s
+tests/test6_no_out.cpp.s:
+	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/tests/test6_no_out.cpp.s
+.PHONY : tests/test6_no_out.cpp.s
+
+uthreads.o: uthreads.cpp.o
+
+.PHONY : uthreads.o
+
+# target to build an object file
+uthreads.cpp.o:
+	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/uthreads.cpp.o
+.PHONY : uthreads.cpp.o
+
+uthreads.i: uthreads.cpp.i
+
+.PHONY : uthreads.i
+
+# target to preprocess a source file
+uthreads.cpp.i:
+	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/uthreads.cpp.i
+.PHONY : uthreads.cpp.i
+
+uthreads.s: uthreads.cpp.s
+
+.PHONY : uthreads.s
+
+# target to generate assembly for a file
+uthreads.cpp.s:
+	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/uthreads.cpp.s
+.PHONY : uthreads.cpp.s
+
+utils.o: utils.cpp.o
+
+.PHONY : utils.o
+
+# target to build an object file
+utils.cpp.o:
+	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/utils.cpp.o
+.PHONY : utils.cpp.o
+
+utils.i: utils.cpp.i
+
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.cpp.i:
+	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/utils.cpp.i
+.PHONY : utils.cpp.i
+
+utils.s: utils.cpp.s
+
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.cpp.s:
+	$(MAKE) -f CMakeFiles/uthreads.h.dir/build.make CMakeFiles/uthreads.h.dir/utils.cpp.s
+.PHONY : utils.cpp.s
 
 # Help Target
 help:
@@ -183,15 +210,18 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... untitled"
-	@echo "... main2.o"
-	@echo "... main2.i"
-	@echo "... main2.s"
-	@echo "... resources/uthreads.o"
-	@echo "... resources/uthreads.i"
-	@echo "... resources/uthreads.s"
+	@echo "... edit_cache"
+	@echo "... uthreads.h"
+	@echo "... tests/test6_no_out.o"
+	@echo "... tests/test6_no_out.i"
+	@echo "... tests/test6_no_out.s"
+	@echo "... uthreads.o"
+	@echo "... uthreads.i"
+	@echo "... uthreads.s"
+	@echo "... utils.o"
+	@echo "... utils.i"
+	@echo "... utils.s"
 .PHONY : help
 
 

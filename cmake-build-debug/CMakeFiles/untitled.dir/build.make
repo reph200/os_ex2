@@ -57,45 +57,30 @@ include CMakeFiles/untitled.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/untitled.dir/flags.make
 
-CMakeFiles/untitled.dir/main2.cpp.o: CMakeFiles/untitled.dir/flags.make
-CMakeFiles/untitled.dir/main2.cpp.o: ../main2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/t8832181/CLionProjects/os_ex2_l/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled.dir/main2.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/main2.cpp.o -c /mnt/c/Users/t8832181/CLionProjects/os_ex2_l/main2.cpp
+CMakeFiles/untitled.dir/resources/demo_jmp.c.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/resources/demo_jmp.c.o: ../resources/demo_jmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/t8832181/CLionProjects/os_ex2_l/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/untitled.dir/resources/demo_jmp.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/untitled.dir/resources/demo_jmp.c.o   -c /mnt/c/Users/t8832181/CLionProjects/os_ex2_l/resources/demo_jmp.c
 
-CMakeFiles/untitled.dir/main2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/main2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/t8832181/CLionProjects/os_ex2_l/main2.cpp > CMakeFiles/untitled.dir/main2.cpp.i
+CMakeFiles/untitled.dir/resources/demo_jmp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled.dir/resources/demo_jmp.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/t8832181/CLionProjects/os_ex2_l/resources/demo_jmp.c > CMakeFiles/untitled.dir/resources/demo_jmp.c.i
 
-CMakeFiles/untitled.dir/main2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/main2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/t8832181/CLionProjects/os_ex2_l/main2.cpp -o CMakeFiles/untitled.dir/main2.cpp.s
-
-CMakeFiles/untitled.dir/resources/uthreads.cpp.o: CMakeFiles/untitled.dir/flags.make
-CMakeFiles/untitled.dir/resources/uthreads.cpp.o: ../resources/uthreads.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/t8832181/CLionProjects/os_ex2_l/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled.dir/resources/uthreads.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/resources/uthreads.cpp.o -c /mnt/c/Users/t8832181/CLionProjects/os_ex2_l/resources/uthreads.cpp
-
-CMakeFiles/untitled.dir/resources/uthreads.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/resources/uthreads.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/t8832181/CLionProjects/os_ex2_l/resources/uthreads.cpp > CMakeFiles/untitled.dir/resources/uthreads.cpp.i
-
-CMakeFiles/untitled.dir/resources/uthreads.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/resources/uthreads.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/t8832181/CLionProjects/os_ex2_l/resources/uthreads.cpp -o CMakeFiles/untitled.dir/resources/uthreads.cpp.s
+CMakeFiles/untitled.dir/resources/demo_jmp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled.dir/resources/demo_jmp.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/t8832181/CLionProjects/os_ex2_l/resources/demo_jmp.c -o CMakeFiles/untitled.dir/resources/demo_jmp.c.s
 
 # Object files for target untitled
 untitled_OBJECTS = \
-"CMakeFiles/untitled.dir/main2.cpp.o" \
-"CMakeFiles/untitled.dir/resources/uthreads.cpp.o"
+"CMakeFiles/untitled.dir/resources/demo_jmp.c.o"
 
 # External object files for target untitled
 untitled_EXTERNAL_OBJECTS =
 
-untitled: CMakeFiles/untitled.dir/main2.cpp.o
-untitled: CMakeFiles/untitled.dir/resources/uthreads.cpp.o
+untitled: CMakeFiles/untitled.dir/resources/demo_jmp.c.o
 untitled: CMakeFiles/untitled.dir/build.make
 untitled: CMakeFiles/untitled.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/t8832181/CLionProjects/os_ex2_l/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable untitled"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/t8832181/CLionProjects/os_ex2_l/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable untitled"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/untitled.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
